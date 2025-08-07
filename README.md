@@ -93,6 +93,11 @@ docker-compose --version
 ## **Hasil Setup**
 - **Odoo 13** dapat dijalankan pada port yang telah dikonfigurasi.
 - **PostgreSQL** berjalan di container terpisah dan terhubung dengan Odoo.
+
+## **Screenshot**
+![](https://github.com/arifnrrmdn/odoo13-docker/blob/main/screenshot/1.png)
+![](https://github.com/arifnrrmdn/odoo13-docker/blob/main/screenshot/2.png)
+![](https://github.com/arifnrrmdn/odoo13-docker/blob/main/screenshot/3.png)
   
 ## **Kesimpulan**
 Dengan Docker 20.10.24 dan Docker Compose 1.29.2 pada Linux Parrot Security 6.4, setup lingkungan pengembangan Odoo 13 dapat dilakukan dengan lancar dan terisolasi.
