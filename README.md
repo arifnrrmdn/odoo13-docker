@@ -45,7 +45,7 @@ docker-compose --version
             - ./addons:/mnt/extra-addons
             - ./odoo-web-data:/var/lib/odoo
         db:
-          image: postgres:9.5
+          image: postgres:10
           environment:
             - POSTGRES_DB=postgres
             - POSTGRES_USER=odoo
