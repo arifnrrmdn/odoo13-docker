@@ -4,20 +4,18 @@ Panduan ini menjelaskan langkah-langkah untuk melakukan setup lingkungan pengemb
 
 ## **Lingkungan Pengembangan**
 
-### **WSL (Windows Subsystem for Linux)**
-- **Version**: 2.5.9.0
-- **Kernel Version**: 6.6.87.2-1
-- **WSLg Version**: 1.0.66
-- **MSRDC Version**: 1.2.6074
-- **Direct3D Version**: 1.611.1-81528511
-- **DXCore Version**: 10.0.26100.1-240331-1435.ge-release
-- **Windows Version**: 10.0.26100.3194
+### Linux Parrot
+- **No LSB modules are available.**
+- **Distributor ID**: Debian  
+- **Description**: Parrot Security 6.4 (lorikeet)  
+- **Release**: 6.4  
+- **Codename**: lory  
 
 ### **Docker**
-- **Docker Engine Version**: 27.5.1, build 27.5.1-0ubuntu3~24.04.2
+- **Docker Engine Version**: 20.10.24+dfsg1, build 297e128  
 
 ### **Docker Compose**
-- **Version**: 1.29.2, build unknown
+- **Version**: 1.29.2, build unknown  
 
 ## **Langkah-langkah Setup**
 
