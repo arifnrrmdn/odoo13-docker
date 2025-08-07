@@ -19,9 +19,14 @@ Panduan ini menjelaskan langkah-langkah untuk melakukan setup lingkungan pengemb
 
 ## **Langkah-langkah Setup**
 
-1. **Instalasi Docker Desktop**
-    - Unduh dan instal **Docker Desktop** versi 27.5.1 pada Windows, yang mendukung integrasi dengan WSL 2.
-    - Docker Compose akan diinstal secara otomatis bersama dengan Docker Desktop.
+1. Instalasi Docker dan Docker Compose
+Pastikan Docker dan Docker Compose sudah terpasang di sistem.
+
+Verifikasi instalasi:
+```bash
+docker --version
+docker-compose --version
+```
 
 2. **Konfigurasi Docker Compose untuk Odoo 13**
     - Siapkan file konfigurasi `docker-compose.yml` untuk menjalankan **Odoo 13** dan **PostgreSQL** dalam container terpisah.
@@ -34,7 +39,7 @@ Panduan ini menjelaskan langkah-langkah untuk melakukan setup lingkungan pengemb
           depends_on:
             - db
           ports:
-            - "9999:8069"
+            - "2513:8069"
           volumes:
             - ./config:/etc/odoo
             - ./addons:/mnt/extra-addons
@@ -90,7 +95,8 @@ Panduan ini menjelaskan langkah-langkah untuk melakukan setup lingkungan pengemb
 - **PostgreSQL** berjalan di container terpisah dan terhubung dengan Odoo.
   
 ## **Kesimpulan**
-Dengan menggunakan Docker versi **27.5.1** dan Docker Compose versi **1.29.2**, pengaturan **Odoo 13** dapat dilakukan dengan lancar di lingkungan pengembangan berbasis WSL 2. Konfigurasi ini menyediakan cara yang efisien dan mudah untuk menjalankan Odoo dalam container terisolasi.
+Dengan Docker 20.10.24 dan Docker Compose 1.29.2 pada Linux Parrot Security 6.4, setup lingkungan pengembangan Odoo 13 dapat dilakukan dengan lancar dan terisolasi.
+Konfigurasi ini mempermudah pengelolaan environment dan menjaga konsistensi aplikasi.
 
 ## **Referensi**
 - [Dokumentasi Odoo](https://www.odoo.com/)
