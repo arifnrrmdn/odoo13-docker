@@ -9,7 +9,7 @@ services:
     volumes:
       - odoo-data-volume:/var/lib/odoo
       # untuk file config berada di container
-      - /home/ariev/odoo13-docker/config/odoo13.conf:/etc/odoo/odoo.conf
+      - ./config:/etc/odoo
       # jika file config berada dihost gunakan ini
       # - /etc/odoo/odoo.conf:/etc/odoo/odoo.conf 
       
